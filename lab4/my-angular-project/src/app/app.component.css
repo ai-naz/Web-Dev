@@ -1,0 +1,44 @@
+.image-gallery {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    margin: auto;
+}
+
+.image-gallery img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    object-fit: contain;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 35px;
+    height: 35px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.arrow.left {
+    left: 5px;
+}
+
+.arrow.right {
+    right: 5px;
+}
+
+.arrow:hover {
+    background: rgba(0, 0, 0, 0.8);
+}

@@ -1,0 +1,139 @@
+body {
+    background-color: #f8f9fa;
+    font-family: 'Arial', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+    background-color: rgba(173, 216, 230, 0.6);
+    margin: 30px 20px;
+    padding: 10px;
+    color: #333;
+    border-radius: 10px;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.product-card {
+    background: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    width: 260px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s;
+    position: relative;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.image-gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 15px;
+    height: 200px;
+    width: 250px;
+}
+
+.image-gallery img {
+    border-radius: 10px;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.arrow {
+    background: rgba(0, 0, 0, 0.5);
+    width: 25px;
+    height: 25px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    font-size: 18px;
+    z-index: 2;
+}
+
+.arrow.left {
+    left: -40px;
+}
+
+.arrow.right {
+    right: -40px;
+}
+
+.arrow:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+
+.info {
+    margin-bottom: 15px;
+}
+
+.info h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.info p {
+    color: #555;
+    font-size: 14px;
+}
+
+.buy-button {
+    background-color: #acd8e5;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    width: 100%;
+    margin-bottom: 10px;
+    transition: background 0.3s;
+}
+
+.buy-button:hover {
+    background-color: #e04352;
+}
+
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.share-button {
+    color: white;
+    font-size: 14px;
+    padding: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.whatsapp {
+    background-color: #85ebaa;
+}
+
+.telegram {
+    background-color: #24a3e3;
+}
