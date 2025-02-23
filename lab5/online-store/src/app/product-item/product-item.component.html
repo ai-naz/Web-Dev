@@ -1,0 +1,18 @@
+<div class="product-card">
+    <div class="image-gallery">
+      <button class="arrow left" (click)="prevImage()">❮</button>
+      <img [src]="product.image[currentImageIndex]" alt="{{ product.name }}">
+      <button class="arrow right" (click)="nextImage()">❯</button>
+    </div>
+  
+    <div class="info">
+      <h3>{{ product.name }}</h3>
+      <p>{{ product.description }}</p>
+      <p><strong>{{ product.price }} KZT</strong></p>
+      <p>⭐ {{ product.rating }}</p>
+      <p>❤️ {{ product.likes }} Likes</p>
+    </div>
+  
+    <button (click)="likeProduct()">Like</button>
+    <button (click)="removeProduct()">Remove</button>
+  </div>

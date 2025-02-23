@@ -1,0 +1,9 @@
+<h1>INSTAX MINI 12</h1>
+
+<div class="category-list">
+  <button *ngFor="let category of categories" (click)="onSelectCategory(category.id)">
+    {{ category.name }}
+  </button>
+</div>
+
+<app-product-list *ngIf="selectedCategoryId" [categoryId]="selectedCategoryId"></app-product-list>
