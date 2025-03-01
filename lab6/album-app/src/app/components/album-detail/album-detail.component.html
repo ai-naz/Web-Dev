@@ -1,0 +1,8 @@
+<h2>Album Detail</h2>
+<p>ID: {{ album.id }}</p>
+<label>Title:
+  <input [(ngModel)]="newTitle">
+</label>
+<button (click)="saveChanges()">Save</button>
+<button (click)="goBack()">Return</button>
+<a [routerLink]="['/albums', album.id, 'photos']">Photos</a>
