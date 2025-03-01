@@ -1,0 +1,20 @@
+<div class="container">
+  <h1>Album Details</h1>
+  <div *ngIf="album" class="album-card">
+    <h2>{{ album?.title }}</h2>
+    <div class="album-details">
+      <p><strong>ID:</strong> {{ album.id }}</p>
+      <p><strong>User ID:</strong> {{ album.userId }}</p>
+    </div>
+    <div class="form-group">
+      <label for="albumTitle">Title:
+        <input id="albumTitle" [(ngModel)]="album.title" class="form-control" />
+      </label>
+    </div>
+    <div class="button-group">
+      <button (click)="saveAlbum()">Save</button>
+      <button (click)="returnToAlbums()">Return</button>
+      <a [routerLink]="['/album', album?.id, 'photos']">Photos</a>
+    </div>
+  </div>
+</div>
